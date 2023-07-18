@@ -1,4 +1,4 @@
-package com.brandonreyes.handsome_contact
+package com.brandonreyes.handsome_contact.screens
 
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import android.os.Bundle
@@ -37,9 +37,9 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.brandonreyes.handsome_contact.R
 import com.brandonreyes.handsome_contact.ui.theme.Handsome_ContactTheme
 import com.brandonreyes.handsome_contact.data.Contact
-import com.brandonreyes.handsome_contact.ui.theme.Handsome_ContactTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -164,7 +164,7 @@ private fun CardContent(list: Contact ) {
             Icon(
                 imageVector = if (expanded) Filled.ExpandLess else Filled.ExpandMore,
                 contentDescription = if (expanded) {
-                    stringResource(R.string.show_less    )
+                    stringResource(R.string.show_less)
                 } else {
                     stringResource(R.string.show_more)
                 }
